@@ -2,4 +2,10 @@
     <string name="app_name">My Application</string>
     <string name="btn1">Test button 1</string>
     <string name="text1">text 1</string>
+    <string name="btn2">Test button 2</string>
+    <string name="text2">Text 2</string>
+    <string name="btn3">Test button 3</string>
+    <string name="text3">Text 3</string>
+    <string name="btn4">Test button 4</string>
+    <string name="text4">Text 4</string>
 </resources>

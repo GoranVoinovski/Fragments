@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
         MyPageAdapter adapter = new MyPageAdapter(this.getSupportFragmentManager());
         adapter.addFragment(new Fragment1(),"Tab 1");
+        adapter.addFragment(new Fragment2(),"Tab 2");
+        adapter.addFragment(new Fragment3(),"Tab 3");
+        adapter.addFragment(new Fragment4(),"Tab 4");
         mojpager.setAdapter(adapter);
     }
 }
