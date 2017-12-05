@@ -8,4 +8,8 @@
     <string name="text3">Text 3</string>
     <string name="btn4">Test button 4</string>
     <string name="text4">Text 4</string>
+    <string name="textviewtekst">This is Fragment 1</string>
+    <string name="textviewtekst2">This is Fragment 2</string>
+    <string name="textviewtekst3">This is Fragment 3</string>
+    <string name="textviewtekst4">This is Fragment 4</string>
 </resources>
