@@ -6,8 +6,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -21,6 +24,7 @@ import butterknife.Unbinder;
 public class Fragment3 extends Fragment{
 
     @BindView(R.id.textview)TextView tekts;
+    @BindView(R.id.imgview)ImageView slika;
     private Unbinder mUnbind;
 
     @Nullable
@@ -29,10 +33,18 @@ public class Fragment3 extends Fragment{
 
         View view = inflater.inflate(R.layout.fragment3,null);
         mUnbind  =  ButterKnife.bind(this, view);
-
-
+        //Picasso.with(getActivity()).load(R.drawable.brainster_and_code).fit().centerInside().into(slika);
+        Picasso.with(getActivity()).load("https://www.cleverfiles.com/howto/wp-content/uploads/2016/08/mini.jpg").fit().centerInside().into(slika);
         return view;
     }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mUnbind.unbind();
+    }
+
+
 
     @OnClick(R.id.btn)
     public void buttonClick (){
@@ -42,9 +54,5 @@ public class Fragment3 extends Fragment{
 
     }
 
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        mUnbind.unbind();
-    }
+
 }
